@@ -7,25 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53453CF300C568F3F30F764 /* Pods_LTVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169EC461324ACD04A6CBF8D2 /* Pods_LTVideoKit.framework */; };
+		FA94A6551CA5434E0026418E /* LTVideoInstantFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A6541CA5434E0026418E /* LTVideoInstantFilter.m */; };
+		FA94A6581CA543970026418E /* LTVideoFadeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A6571CA543970026418E /* LTVideoFadeFilter.m */; };
+		FA94A65B1CA543EA0026418E /* LTVideoProcessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A65A1CA543EA0026418E /* LTVideoProcessFilter.m */; };
+		FA94A65E1CA544F50026418E /* LTVideoTransferFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A65D1CA544F50026418E /* LTVideoTransferFilter.m */; };
 		FADC0D311CA2A3C600E13491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D301CA2A3C500E13491 /* main.m */; };
 		FADC0D341CA2A3C600E13491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D331CA2A3C600E13491 /* AppDelegate.m */; };
-		FADC0D371CA2A3C600E13491 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D361CA2A3C600E13491 /* ViewController.m */; };
-		FADC0D3A1CA2A3C600E13491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC0D381CA2A3C600E13491 /* Main.storyboard */; };
 		FADC0D3C1CA2A3C600E13491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC0D3B1CA2A3C600E13491 /* Assets.xcassets */; };
 		FADC0D3F1CA2A3C600E13491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC0D3D1CA2A3C600E13491 /* LaunchScreen.storyboard */; };
+		FADC0D541CA2A63400E13491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC0D531CA2A63400E13491 /* Main.storyboard */; };
+		FADC0D571CA2A64700E13491 /* LTRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D561CA2A64700E13491 /* LTRecorderViewController.m */; };
+		FADC0D5D1CA2A9D600E13491 /* LTAVAssetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D5C1CA2A9D600E13491 /* LTAVAssetUtils.m */; };
+		FADC0D621CA37C8700E13491 /* LTRecorderProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D5F1CA37C8700E13491 /* LTRecorderProgressView.m */; };
+		FADC0D631CA37C8700E13491 /* LTVideoSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D611CA37C8700E13491 /* LTVideoSegment.m */; };
+		FADC0D6A1CA386DD00E13491 /* LTVideoViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D691CA386DD00E13491 /* LTVideoViewerViewController.m */; };
+		FADC0D6E1CA3B29E00E13491 /* LTVideoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D6D1CA3B29E00E13491 /* LTVideoEditorViewController.m */; };
+		FADC0D771CA3B69500E13491 /* LTVideoPlainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D761CA3B69500E13491 /* LTVideoPlainFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		169EC461324ACD04A6CBF8D2 /* Pods_LTVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EEB0F7785B121743AC0E56 /* Pods-LTVideoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTVideoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTVideoKit/Pods-LTVideoKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C6DC98A1B8C00CEA22F370 /* Pods-LTVideoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTVideoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTVideoKit/Pods-LTVideoKit.release.xcconfig"; sourceTree = "<group>"; };
+		FA94A6531CA5434E0026418E /* LTVideoInstantFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoInstantFilter.h; sourceTree = "<group>"; };
+		FA94A6541CA5434E0026418E /* LTVideoInstantFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoInstantFilter.m; sourceTree = "<group>"; };
+		FA94A6561CA543970026418E /* LTVideoFadeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoFadeFilter.h; sourceTree = "<group>"; };
+		FA94A6571CA543970026418E /* LTVideoFadeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoFadeFilter.m; sourceTree = "<group>"; };
+		FA94A6591CA543EA0026418E /* LTVideoProcessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoProcessFilter.h; sourceTree = "<group>"; };
+		FA94A65A1CA543EA0026418E /* LTVideoProcessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoProcessFilter.m; sourceTree = "<group>"; };
+		FA94A65C1CA544F50026418E /* LTVideoTransferFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoTransferFilter.h; sourceTree = "<group>"; };
+		FA94A65D1CA544F50026418E /* LTVideoTransferFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoTransferFilter.m; sourceTree = "<group>"; };
 		FADC0D2C1CA2A3C500E13491 /* LTVideoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTVideoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC0D301CA2A3C500E13491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADC0D321CA2A3C600E13491 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FADC0D331CA2A3C600E13491 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FADC0D351CA2A3C600E13491 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FADC0D361CA2A3C600E13491 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FADC0D391CA2A3C600E13491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADC0D3B1CA2A3C600E13491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADC0D3E1CA2A3C600E13491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC0D401CA2A3C600E13491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADC0D531CA2A63400E13491 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FADC0D551CA2A64700E13491 /* LTRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRecorderViewController.h; sourceTree = "<group>"; };
+		FADC0D561CA2A64700E13491 /* LTRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRecorderViewController.m; sourceTree = "<group>"; };
+		FADC0D5B1CA2A9D600E13491 /* LTAVAssetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAVAssetUtils.h; sourceTree = "<group>"; };
+		FADC0D5C1CA2A9D600E13491 /* LTAVAssetUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAVAssetUtils.m; sourceTree = "<group>"; };
+		FADC0D5E1CA37C8700E13491 /* LTRecorderProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRecorderProgressView.h; sourceTree = "<group>"; };
+		FADC0D5F1CA37C8700E13491 /* LTRecorderProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRecorderProgressView.m; sourceTree = "<group>"; };
+		FADC0D601CA37C8700E13491 /* LTVideoSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoSegment.h; sourceTree = "<group>"; };
+		FADC0D611CA37C8700E13491 /* LTVideoSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoSegment.m; sourceTree = "<group>"; };
+		FADC0D681CA386DD00E13491 /* LTVideoViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoViewerViewController.h; sourceTree = "<group>"; };
+		FADC0D691CA386DD00E13491 /* LTVideoViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoViewerViewController.m; sourceTree = "<group>"; };
+		FADC0D6C1CA3B29E00E13491 /* LTVideoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoEditorViewController.h; sourceTree = "<group>"; };
+		FADC0D6D1CA3B29E00E13491 /* LTVideoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoEditorViewController.m; sourceTree = "<group>"; };
+		FADC0D711CA3B50200E13491 /* LTVideoFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoFilter.h; sourceTree = "<group>"; };
+		FADC0D751CA3B69500E13491 /* LTVideoPlainFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoPlainFilter.h; sourceTree = "<group>"; };
+		FADC0D761CA3B69500E13491 /* LTVideoPlainFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoPlainFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +68,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53453CF300C568F3F30F764 /* Pods_LTVideoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E9B9BE0829CB6082698BBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169EC461324ACD04A6CBF8D2 /* Pods_LTVideoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6446F9D6801EDA99B2E5848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39EEB0F7785B121743AC0E56 /* Pods-LTVideoKit.debug.xcconfig */,
+				A9C6DC98A1B8C00CEA22F370 /* Pods-LTVideoKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FADC0D231CA2A3C500E13491 = {
 			isa = PBXGroup;
 			children = (
 				FADC0D2E1CA2A3C500E13491 /* LTVideoKit */,
 				FADC0D2D1CA2A3C500E13491 /* Products */,
+				A6446F9D6801EDA99B2E5848 /* Pods */,
+				4E9B9BE0829CB6082698BBE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +113,9 @@
 		FADC0D2E1CA2A3C500E13491 /* LTVideoKit */ = {
 			isa = PBXGroup;
 			children = (
+				FADC0D461CA2A40B00E13491 /* Sources */,
 				FADC0D321CA2A3C600E13491 /* AppDelegate.h */,
 				FADC0D331CA2A3C600E13491 /* AppDelegate.m */,
-				FADC0D351CA2A3C600E13491 /* ViewController.h */,
-				FADC0D361CA2A3C600E13491 /* ViewController.m */,
-				FADC0D381CA2A3C600E13491 /* Main.storyboard */,
 				FADC0D3B1CA2A3C600E13491 /* Assets.xcassets */,
 				FADC0D3D1CA2A3C600E13491 /* LaunchScreen.storyboard */,
 				FADC0D401CA2A3C600E13491 /* Info.plist */,
@@ -79,6 +132,77 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FADC0D461CA2A40B00E13491 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D6F1CA3B4BF00E13491 /* Filter */,
+				FADC0D6B1CA3B28800E13491 /* Editor */,
+				FADC0D671CA386B700E13491 /* Viewer */,
+				FADC0D521CA2A61400E13491 /* Recorder */,
+				FADC0D481CA2A46900E13491 /* Common */,
+				FADC0D531CA2A63400E13491 /* Main.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FADC0D481CA2A46900E13491 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D5B1CA2A9D600E13491 /* LTAVAssetUtils.h */,
+				FADC0D5C1CA2A9D600E13491 /* LTAVAssetUtils.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FADC0D521CA2A61400E13491 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D5E1CA37C8700E13491 /* LTRecorderProgressView.h */,
+				FADC0D5F1CA37C8700E13491 /* LTRecorderProgressView.m */,
+				FADC0D601CA37C8700E13491 /* LTVideoSegment.h */,
+				FADC0D611CA37C8700E13491 /* LTVideoSegment.m */,
+				FADC0D551CA2A64700E13491 /* LTRecorderViewController.h */,
+				FADC0D561CA2A64700E13491 /* LTRecorderViewController.m */,
+			);
+			name = Recorder;
+			sourceTree = "<group>";
+		};
+		FADC0D671CA386B700E13491 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D681CA386DD00E13491 /* LTVideoViewerViewController.h */,
+				FADC0D691CA386DD00E13491 /* LTVideoViewerViewController.m */,
+			);
+			name = Viewer;
+			sourceTree = "<group>";
+		};
+		FADC0D6B1CA3B28800E13491 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D6C1CA3B29E00E13491 /* LTVideoEditorViewController.h */,
+				FADC0D6D1CA3B29E00E13491 /* LTVideoEditorViewController.m */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+		FADC0D6F1CA3B4BF00E13491 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				FADC0D711CA3B50200E13491 /* LTVideoFilter.h */,
+				FADC0D751CA3B69500E13491 /* LTVideoPlainFilter.h */,
+				FADC0D761CA3B69500E13491 /* LTVideoPlainFilter.m */,
+				FA94A6531CA5434E0026418E /* LTVideoInstantFilter.h */,
+				FA94A6541CA5434E0026418E /* LTVideoInstantFilter.m */,
+				FA94A6561CA543970026418E /* LTVideoFadeFilter.h */,
+				FA94A6571CA543970026418E /* LTVideoFadeFilter.m */,
+				FA94A6591CA543EA0026418E /* LTVideoProcessFilter.h */,
+				FA94A65A1CA543EA0026418E /* LTVideoProcessFilter.m */,
+				FA94A65C1CA544F50026418E /* LTVideoTransferFilter.h */,
+				FA94A65D1CA544F50026418E /* LTVideoTransferFilter.m */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADC0D431CA2A3C600E13491 /* Build configuration list for PBXNativeTarget "LTVideoKit" */;
 			buildPhases = (
+				7D3BB7CDDABCF1318349F820 /* Check Pods Manifest.lock */,
 				FADC0D281CA2A3C500E13491 /* Sources */,
 				FADC0D291CA2A3C500E13491 /* Frameworks */,
 				FADC0D2A1CA2A3C500E13491 /* Resources */,
+				2B4FCA7CE43A5A07FA8F9399 /* Embed Pods Frameworks */,
+				713F12A14C53580CF94C1117 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +237,7 @@
 				TargetAttributes = {
 					FADC0D2B1CA2A3C500E13491 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LUAG5Z5ST3;
 					};
 				};
 			};
@@ -136,21 +264,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADC0D541CA2A63400E13491 /* Main.storyboard in Resources */,
 				FADC0D3F1CA2A3C600E13491 /* LaunchScreen.storyboard in Resources */,
 				FADC0D3C1CA2A3C600E13491 /* Assets.xcassets in Resources */,
-				FADC0D3A1CA2A3C600E13491 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B4FCA7CE43A5A07FA8F9399 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTVideoKit/Pods-LTVideoKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		713F12A14C53580CF94C1117 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTVideoKit/Pods-LTVideoKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D3BB7CDDABCF1318349F820 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FADC0D281CA2A3C500E13491 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADC0D371CA2A3C600E13491 /* ViewController.m in Sources */,
+				FADC0D771CA3B69500E13491 /* LTVideoPlainFilter.m in Sources */,
+				FADC0D6A1CA386DD00E13491 /* LTVideoViewerViewController.m in Sources */,
 				FADC0D341CA2A3C600E13491 /* AppDelegate.m in Sources */,
+				FADC0D621CA37C8700E13491 /* LTRecorderProgressView.m in Sources */,
+				FA94A65B1CA543EA0026418E /* LTVideoProcessFilter.m in Sources */,
+				FADC0D571CA2A64700E13491 /* LTRecorderViewController.m in Sources */,
+				FADC0D5D1CA2A9D600E13491 /* LTAVAssetUtils.m in Sources */,
+				FA94A6551CA5434E0026418E /* LTVideoInstantFilter.m in Sources */,
+				FA94A6581CA543970026418E /* LTVideoFadeFilter.m in Sources */,
+				FA94A65E1CA544F50026418E /* LTVideoTransferFilter.m in Sources */,
+				FADC0D6E1CA3B29E00E13491 /* LTVideoEditorViewController.m in Sources */,
+				FADC0D631CA37C8700E13491 /* LTVideoSegment.m in Sources */,
 				FADC0D311CA2A3C600E13491 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +344,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FADC0D381CA2A3C600E13491 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FADC0D391CA2A3C600E13491 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FADC0D3D1CA2A3C600E13491 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,23 +439,33 @@
 		};
 		FADC0D441CA2A3C600E13491 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EEB0F7785B121743AC0E56 /* Pods-LTVideoKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LTVideoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ltebean.LTVideoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		FADC0D451CA2A3C600E13491 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C6DC98A1B8C00CEA22F370 /* Pods-LTVideoKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LTVideoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ltebean.LTVideoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +488,7 @@
 				FADC0D451CA2A3C600E13491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
