@@ -127,6 +127,9 @@
                                     <action selector="closeButtonPressed:" destination="hbT-cz-NOt" eventType="touchUpInside" id="oeZ-sr-VVX"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-focus" translatesAutoresizingMaskIntoConstraints="NO" id="BlD-kg-ifE">
+                                <rect key="frame" x="128" y="238" width="64" height="64"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -151,6 +154,7 @@
                         <outlet property="cameraButton" destination="Vbb-5D-MiQ" id="BnZ-Np-GFh"/>
                         <outlet property="deleteSegmentButton" destination="3IH-vF-OqI" id="t4S-Sd-BnO"/>
                         <outlet property="finishButton" destination="F6z-H9-MGW" id="VBn-B4-fuf"/>
+                        <outlet property="focusView" destination="BlD-kg-ifE" id="kvN-Pp-IXE"/>
                         <outlet property="progressView" destination="CWC-IR-YOG" id="wmt-yf-f4e"/>
                         <outlet property="shootingButton" destination="KyG-OK-Vcf" id="RpY-QF-mEB"/>
                         <outlet property="torchButton" destination="8ob-xm-ZQ9" id="tEd-34-7Gn"/>
@@ -274,6 +278,7 @@
         <image name="icon-delete" width="16" height="16"/>
         <image name="icon-finish" width="16" height="16"/>
         <image name="icon-flash" width="16" height="16"/>
+        <image name="icon-focus" width="64" height="64"/>
         <image name="icon-recorder" width="32" height="32"/>
     </resources>
 </document>

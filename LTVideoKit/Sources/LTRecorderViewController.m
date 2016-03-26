@@ -21,6 +21,7 @@
 @property (nonatomic, strong) AVCaptureMovieFileOutput *movieFileOutput;
 @property (nonatomic, strong) NSMutableArray *videoSegments;
 @property (nonatomic, strong) AVCaptureDevice *videoDevice;
+@property (weak, nonatomic) IBOutlet UIImageView *focusView;
 @property (nonatomic) NSTimeInterval maxSeconds;
 @property (nonatomic) BOOL running;
 @end
@@ -46,6 +47,7 @@
     
     self.finishButton.alpha = 0;
     self.deleteSegmentButton.alpha = 0;
+    self.focusView.hidden = YES;
 
     // config capture session
     self.session = [[AVCaptureSession alloc] init];
@@ -232,6 +234,17 @@
             [self.videoDevice setFocusPointOfInterest:poi];
             [self.videoDevice setFocusMode:AVCaptureFocusModeAutoFocus];
             [self.videoDevice unlockForConfiguration];
+            
+            self.focusView.center = point;
+            self.focusView.hidden = NO;
+            self.focusView.alpha = 1;
+            self.focusView.transform = CGAffineTransformMakeScale(1.8, 1.8);
+            [UIView animateWithDuration:0.3 animations:^{
+                self.focusView.transform = CGAffineTransformMakeScale(1, 1);
+                self.focusView.alpha = 0.3;
+            } completion:^(BOOL finished) {
+                self.focusView.hidden = YES;
+            }];
         }
     }
 }
