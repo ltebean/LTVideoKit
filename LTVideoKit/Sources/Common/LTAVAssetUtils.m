@@ -49,7 +49,7 @@
                                         atTime:insertTime
                                          error:nil];
         
-        insertTime = CMTimeAdd(insertTime,asset.duration);
+        insertTime = CMTimeAdd(insertTime, asset.duration);
     }
     return mixComposition;
 }
