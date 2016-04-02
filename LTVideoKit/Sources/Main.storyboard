@@ -49,7 +49,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6z-H9-MGW" customClass="DesignableButton">
                                 <rect key="frame" x="265" y="275" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30282866380000001" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bvr-57-aK2"/>
                                     <constraint firstAttribute="width" constant="40" id="ewQ-DN-kvo"/>
@@ -67,7 +67,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbb-5D-MiQ" customClass="DesignableButton">
                                 <rect key="frame" x="265" y="60" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30282866379310347" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7fk-7W-zcY"/>
                                     <constraint firstAttribute="width" constant="40" id="phi-KJ-IBk"/>
@@ -84,7 +84,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ob-xm-ZQ9" customClass="DesignableButton">
                                 <rect key="frame" x="265" y="115" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30282866380000001" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="rBR-Yg-EZe"/>
                                     <constraint firstAttribute="width" constant="40" id="sOD-ay-6om"/>
@@ -101,7 +101,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IH-vF-OqI" customClass="DesignableButton">
                                 <rect key="frame" x="265" y="220" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30282866380000001" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="HWd-Wh-mqG"/>
                                     <constraint firstAttribute="height" constant="40" id="w0L-5u-abU"/>
@@ -207,7 +207,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msP-JZ-uWb" customClass="DesignableButton">
                                 <rect key="frame" x="265" y="35" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30282866380000001" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4fL-eg-dPs"/>
                                     <constraint firstAttribute="width" constant="40" id="g9f-4K-IDC"/>
