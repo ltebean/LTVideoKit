@@ -12,6 +12,7 @@
 		FA94A6581CA543970026418E /* LTVideoFadeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A6571CA543970026418E /* LTVideoFadeFilter.m */; };
 		FA94A65B1CA543EA0026418E /* LTVideoProcessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A65A1CA543EA0026418E /* LTVideoProcessFilter.m */; };
 		FA94A65E1CA544F50026418E /* LTVideoTransferFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94A65D1CA544F50026418E /* LTVideoTransferFilter.m */; };
+		FA9B9A0A1CB0EA7F00A827B7 /* LTVideoProgressSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B9A091CB0EA7F00A827B7 /* LTVideoProgressSlider.m */; };
 		FADC0D311CA2A3C600E13491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D301CA2A3C500E13491 /* main.m */; };
 		FADC0D341CA2A3C600E13491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADC0D331CA2A3C600E13491 /* AppDelegate.m */; };
 		FADC0D3C1CA2A3C600E13491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC0D3B1CA2A3C600E13491 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 		FA94A65A1CA543EA0026418E /* LTVideoProcessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoProcessFilter.m; sourceTree = "<group>"; };
 		FA94A65C1CA544F50026418E /* LTVideoTransferFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoTransferFilter.h; sourceTree = "<group>"; };
 		FA94A65D1CA544F50026418E /* LTVideoTransferFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoTransferFilter.m; sourceTree = "<group>"; };
+		FA9B9A081CB0EA7F00A827B7 /* LTVideoProgressSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoProgressSlider.h; sourceTree = "<group>"; };
+		FA9B9A091CB0EA7F00A827B7 /* LTVideoProgressSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoProgressSlider.m; sourceTree = "<group>"; };
 		FADC0D2C1CA2A3C500E13491 /* LTVideoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTVideoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC0D301CA2A3C500E13491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADC0D321CA2A3C600E13491 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 			children = (
 				FADC0D6C1CA3B29E00E13491 /* LTVideoEditorViewController.h */,
 				FADC0D6D1CA3B29E00E13491 /* LTVideoEditorViewController.m */,
+				FA9B9A081CB0EA7F00A827B7 /* LTVideoProgressSlider.h */,
+				FA9B9A091CB0EA7F00A827B7 /* LTVideoProgressSlider.m */,
 			);
 			name = Editor;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				FA94A65B1CA543EA0026418E /* LTVideoProcessFilter.m in Sources */,
 				FADC0D571CA2A64700E13491 /* LTRecorderViewController.m in Sources */,
 				FADC0D5D1CA2A9D600E13491 /* LTAVAssetUtils.m in Sources */,
+				FA9B9A0A1CB0EA7F00A827B7 /* LTVideoProgressSlider.m in Sources */,
 				FA94A6551CA5434E0026418E /* LTVideoInstantFilter.m in Sources */,
 				FA94A6581CA543970026418E /* LTVideoFadeFilter.m in Sources */,
 				FA94A65E1CA544F50026418E /* LTVideoTransferFilter.m in Sources */,

@@ -98,4 +98,32 @@
     [composition scaleTimeRange:CMTimeRangeMake(startTime, durationTime) toDuration:CMTimeMakeWithSeconds(finalDuration, timescale)];
 }
 
++ (void)generateImagesFromAsset:(AVAsset *)asset interval:(Float64)interval completionHandler:(void (^)(NSArray *images))handler
+{
+    Float64 totalSeconds = CMTimeGetSeconds(asset.duration);
+    CMTimeScale timeScale = asset.duration.timescale;
+    
+    NSMutableArray *times = [NSMutableArray array];
+    Float64 seconds = 0;
+    while (seconds < totalSeconds) {
+        CMTime time = CMTimeMakeWithSeconds(seconds, timeScale);
+        [times addObject:[NSValue valueWithCMTime:time]];
+        seconds += interval;
+    }
+    
+    __block NSInteger counter = 0;
+    NSMutableArray *images = [NSMutableArray array];
+    AVAssetImageGenerator *imageGenerator = [AVAssetImageGenerator assetImageGeneratorWithAsset:asset];
+    imageGenerator.appliesPreferredTrackTransform = YES;
+    [imageGenerator generateCGImagesAsynchronouslyForTimes:times completionHandler:^(CMTime requestedTime, CGImageRef  _Nullable image, CMTime actualTime, AVAssetImageGeneratorResult result, NSError * _Nullable error) {
+        if (result == AVAssetImageGeneratorSucceeded) {
+            [images addObject:[UIImage imageWithCGImage:image]];
+        }
+        counter++;
+        if (counter == times.count - 1) {
+            return handler(images);
+        }
+    }];
+}
+
 @end

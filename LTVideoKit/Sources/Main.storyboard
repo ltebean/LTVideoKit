@@ -194,6 +194,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-pg-oNZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRn-qt-05n">
                                 <rect key="frame" x="5" y="35" width="40" height="40"/>
                                 <constraints>
@@ -250,11 +254,15 @@
                         <constraints>
                             <constraint firstItem="vRn-qt-05n" firstAttribute="top" secondItem="chA-1Q-hfV" secondAttribute="bottom" constant="15" id="0oc-Uw-1J9"/>
                             <constraint firstItem="msP-JZ-uWb" firstAttribute="top" secondItem="chA-1Q-hfV" secondAttribute="bottom" constant="15" id="7sY-VW-7Q7"/>
+                            <constraint firstItem="4C6-ME-O6U" firstAttribute="top" secondItem="M3y-pg-oNZ" secondAttribute="bottom" id="8pY-zB-3ME"/>
                             <constraint firstItem="q5Q-Gd-DTQ" firstAttribute="top" secondItem="NOC-jJ-f2V" secondAttribute="bottom" constant="25" id="DfQ-Hq-PUU"/>
                             <constraint firstAttribute="trailing" secondItem="msP-JZ-uWb" secondAttribute="trailing" constant="15" id="HHw-C9-6fz"/>
                             <constraint firstItem="vRn-qt-05n" firstAttribute="leading" secondItem="2Bp-qk-WaH" secondAttribute="leading" constant="5" id="Uuf-EH-ql1"/>
                             <constraint firstAttribute="trailing" secondItem="q5Q-Gd-DTQ" secondAttribute="trailing" constant="28" id="VbZ-77-5K9"/>
                             <constraint firstAttribute="trailing" secondItem="NOC-jJ-f2V" secondAttribute="trailing" constant="30" id="W6Z-5z-IFU"/>
+                            <constraint firstItem="M3y-pg-oNZ" firstAttribute="top" secondItem="2Bp-qk-WaH" secondAttribute="top" id="WLO-5e-6RJ"/>
+                            <constraint firstAttribute="trailing" secondItem="M3y-pg-oNZ" secondAttribute="trailing" id="ajS-Ep-cWD"/>
+                            <constraint firstItem="M3y-pg-oNZ" firstAttribute="leading" secondItem="2Bp-qk-WaH" secondAttribute="leading" id="igc-b0-4gw"/>
                             <constraint firstItem="4C6-ME-O6U" firstAttribute="top" secondItem="q5Q-Gd-DTQ" secondAttribute="bottom" constant="25" id="kEI-bI-Lhk"/>
                             <constraint firstItem="q5Q-Gd-DTQ" firstAttribute="leading" secondItem="2Bp-qk-WaH" secondAttribute="leading" constant="25" id="sQf-D0-JHj"/>
                             <constraint firstItem="NOC-jJ-f2V" firstAttribute="leading" secondItem="2Bp-qk-WaH" secondAttribute="leading" constant="30" id="uvu-h4-Iqg"/>
@@ -264,6 +272,7 @@
                         <outlet property="closeButton" destination="vRn-qt-05n" id="spn-N1-OC5"/>
                         <outlet property="finishButton" destination="msP-JZ-uWb" id="DYv-Ry-udG"/>
                         <outlet property="modeControl" destination="q5Q-Gd-DTQ" id="TxF-V3-HYE"/>
+                        <outlet property="playerView" destination="M3y-pg-oNZ" id="jag-jp-hua"/>
                         <outlet property="slider" destination="NOC-jJ-f2V" id="frT-LY-no0"/>
                     </connections>
                 </viewController>

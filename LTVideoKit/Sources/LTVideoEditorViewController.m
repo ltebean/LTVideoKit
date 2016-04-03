@@ -17,6 +17,7 @@
 #import "LTVideoProcessFilter.h"
 #import "LTVideoFadeFilter.h"
 #import "LTVideoTransferFilter.h"
+#import "LTVideoProgressSlider.h"
 
 #import "LTAVAssetUtils.h"
 
@@ -29,11 +30,14 @@
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerItem *playerItem;
-@property (nonatomic, strong) LTInfiniteScrollView *scrollView;
+@property (strong, nonatomic) LTInfiniteScrollView *scrollView;
+
 @property (nonatomic, strong) NSArray *filters;
 @property (nonatomic, strong) AVMutableComposition *mixComposition;
 @property (nonatomic, strong) AVMutableComposition *originalMixComposition;
 @property (nonatomic, strong) AVVideoComposition *videoComposition;
+//@property (weak, nonatomic) IBOutlet LTVideoProgressSlider *progressSlider;
+@property (weak, nonatomic) IBOutlet UIView *playerView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *modeControl;
 @end
 
@@ -67,11 +71,12 @@
     self.scrollView.dataSource = self;
     self.scrollView.delegate = self;
     self.scrollView.pagingEnabled = YES;
-    [self.view addSubview:self.scrollView];
+    [self.view insertSubview:self.scrollView aboveSubview:self.playerView];
     
     self.slider.minimumValue = 0;
     self.slider.maximumValue = CMTimeGetSeconds(self.asset.duration);
     
+//    self.progressSlider.thumbnailSize = CGSizeMake(36, 64);
     
     self.player = [[AVPlayer alloc] init];
     
@@ -82,14 +87,10 @@
     
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     self.playerLayer.frame = self.view.bounds;
-    [self.view.layer addSublayer:self.playerLayer];
+    [self.playerView.layer addSublayer:self.playerLayer];
     
     self.slider.hidden = YES;
-    [self.view bringSubviewToFront:self.scrollView];
-    [self.view bringSubviewToFront:self.closeButton];
-    [self.view bringSubviewToFront:self.finishButton];
-    [self.view bringSubviewToFront:self.slider];
-    [self.view bringSubviewToFront:self.modeControl];
+
 }
 
 - (void)resetPlayerItemWithAsset:(AVAsset *)asset
@@ -124,6 +125,12 @@
     [super viewWillAppear:animated];
     [self.scrollView reloadDataWithInitialIndex:0];
     [self.player play];
+//    [LTAVAssetUtils generateImagesFromAsset:self.asset interval:1 completionHandler:^(NSArray *images) {
+//        NSLog(@"%ld", images.count);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.progressSlider reloadWithImages:images];
+//        });
+//    }];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

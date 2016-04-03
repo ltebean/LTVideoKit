@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
 
 @interface LTAVAssetUtils : NSObject
 + (NSURL *)urlForVideoWithUuid:(NSString *)uuid;
@@ -15,4 +16,5 @@
 + (AVAsset *)assetByMergeAssets:(NSArray *)assets;
 + (AVMutableComposition *)mixCompositionWithAsset:(AVAsset *)asset;
 + (void)scaleComposition:(AVMutableComposition *)composition atSeconds:(Float64)startSeconds duration:(Float64)duration withScaleFactor:(Float64)factor;
++ (void)generateImagesFromAsset:(AVAsset *)asset interval:(Float64)seconds completionHandler:(void (^)(NSArray *images))handler;
 @end
