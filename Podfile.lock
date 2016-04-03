@@ -1,5 +1,5 @@
 PODS:
-  - LTInfiniteScrollView (4.3.0)
+  - LTInfiniteScrollView (4.3.2)
   - LTUIKit (0.1.0)
   - SVProgressHUD (2.0)
 
@@ -9,7 +9,7 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC CHECKSUMS:
-  LTInfiniteScrollView: fbd3ad4406d45c379aa9f32095424b6896944193
+  LTInfiniteScrollView: 6ce2fcaf6d030a9e45a164ba9dcdb1b325a30d03
   LTUIKit: a2ea10f50d780c81e8f1defd9f646b874ae2da6f
   SVProgressHUD: e9e7c893686a20da55a28015ed384d9425e15479
 

@@ -30,8 +30,7 @@
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerItem *playerItem;
-@property (strong, nonatomic) LTInfiniteScrollView *scrollView;
-
+@property (weak, nonatomic) IBOutlet LTInfiniteScrollView *scrollView;
 @property (nonatomic, strong) NSArray *filters;
 @property (nonatomic, strong) AVMutableComposition *mixComposition;
 @property (nonatomic, strong) AVMutableComposition *originalMixComposition;
@@ -66,13 +65,9 @@
     ];
     
     // filter scroll view
-    self.scrollView = [[LTInfiniteScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-    self.scrollView.backgroundColor = [UIColor clearColor];
     self.scrollView.dataSource = self;
     self.scrollView.delegate = self;
     self.scrollView.pagingEnabled = YES;
-    [self.view insertSubview:self.scrollView aboveSubview:self.playerView];
-    
     self.slider.minimumValue = 0;
     self.slider.maximumValue = CMTimeGetSeconds(self.asset.duration);
     
